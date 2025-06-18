@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
 nav{
             background-color: black;
             color: white;
@@ -8,7 +13,14 @@ nav .topbar{
             display: flex; 
             align-items: center; 
             justify-content: center;
+            
 } 
+nav .topbar h1{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 45px;
+    margin: 0;
+}
 
 nav .topbar img{
             width: 100px; 
@@ -26,7 +38,7 @@ nav h1 {
             flex: 1; 
             margin: 0; 
             text-align: center; 
-            letter-spacing: 1.5em;
+            
         }
 nav ul {
             list-style: none;
@@ -50,18 +62,111 @@ nav ul li {
 nav ul li a:hover {
             background: darkred;
         }
+.home {
+    background-image: url('Practical Tutorial 03 images/image03.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.home .main-text{
+    border: white solid 8px;
+    padding: 125px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}  
+.home .main-text h1{
+            color: white;
+            font-size: 40px;
+
+            margin: 0;
+}
+.home .main-text p{
+            color: white;
+            font-size: 18px;
+            margin: 20px 0;
+}
+.home .main-text .btn{
+            border: 5px solid red;
+            padding: 5px 100px;
+            font-weight: bold;       
+}
+
 footer{
             background: #222; 
             color: #fff; 
             padding: 40px 0 20px 0; 
-            margin-top: 40px;
+            
 }
 
-footer .cards{
-            display: flex;
-             flex-wrap: wrap; 
-             justify-content: flex-start; 
+footer .footer-content{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
              gap: 40px; 
              max-width: 1200px; 
              margin: 0 auto 20px auto;
+}
+.footer-content .shop-info img{
+            width: 150px;
+            border-radius: 50%;
+            border: 2px solid red;
+}
+.shop-info p {
+  font-style: italic;
+  font-size: 14px;
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-size: 20px;
+}
+.footer-content .questions li{
+            list-style: none;
+            margin-bottom: 10px;
+            
+}  
+.footer-content .questions li a{
+            text-decoration: none;
+            color: white;
+
+}
+.info .info-icons{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.icon {
+  width: 40px;
+  height: 50px;
+  margin-right: 9px;
+  vertical-align: middle;
+  border-radius: 60%;
+}
+
+.location,
+.phone,
+.mail {
+  display: inline;
+  align-items: center;
+  margin: 10px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.location div,
+.phone div,
+.mail div {
+  white-space: pre-line;
+}
+
+.map iframe {
+  width: 100%;
+  height: 200px;
+}
+.small-footer {
+  text-align: center;
+  padding: 5px;
+  background-color: gray;
+  color: #fff;
 }
