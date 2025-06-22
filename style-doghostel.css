@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  background-color: #000;
-  color: #fff;
+  background-color: white;
+  color: black;
+  background-image: url('Practical\ Tutorial\ 03\ images/ima');
 }
 nav{
             background-color: black;
@@ -66,6 +67,52 @@ nav ul li a:hover {
 nav ul li a.active {
             background: darkred;
         }
+.home {
+    background-image: url('Practical Tutorial 03 images/image13.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px; 
+    padding-bottom: 60px;
+}
+.form-box{
+    border: 5px solid green;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    height: 90%;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    outline: 1px solid black;
+    outline-offset: -8px;
+} 
+form {
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;
+    margin-top: 5px;
+    height: 90%;
+    width: 75vh;
+    margin-bottom: 20px;
+}
+.form-input[type="submit"] {
+    margin-top: -20px;
+    width: 120px;
+    height: 50px;      
+    border: 5px solid red;
+    align-self: center;
+    font-size: 15px;    
+}
+.form .form-input[type="number"],
+.form-input[type="date"] {
+    height: 25px;
+    font-size: 15px;
+}
 
 footer{
             background: #222; 
@@ -142,4 +189,29 @@ footer .footer-content{
   padding: 5px;
   background-color: gray;
   color: #fff;
+}
+label {
+    font-size: 18px;
+    font-weight: bold; 
+}
+.form-box h2{
+  font-size: 25px;
+}
+.form-box h2 {
+    margin-top: 5px;
+    margin-bottom: 0;  
+    text-align: flex-start;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: yellow;
+}
+.form-box span{
+  font-size: 25px;
+}
+.form-box hr {
+    border: 2px solid white;
+    margin: 5px 0 20px 0;;      
+    width: 35%;
+    height: 0;
+    background-color: transparent;
 }
