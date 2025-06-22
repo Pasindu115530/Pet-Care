@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background-color: #000;
-  color: #fff;
+  background-color: white;
+  color: black;
 }
 nav{
             background-color: black;
@@ -66,6 +66,93 @@ nav ul li a:hover {
 nav ul li a.active {
             background: darkred;
         }
+
+.home {
+    background-image: url("Practical Tutorial 03 images/image08.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: calc(100% / 3) auto;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   /* Align items to the top */
+    padding-top: 50px;         /* Reduce this value for less gap */
+    padding-bottom: 5px;
+}   
+.form-container {
+
+    background-color: rgb(42, 174, 201);
+    width: 100vh;
+    height: 45vh;
+    margin-top: 0;    
+    padding: 20px;
+
+}     
+form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 0;
+            margin-top: 0;
+
+           
+        }
+ 
+.form [type="text"],
+.form [type="email"],
+.form [type="number"] {
+
+            width: 100%;
+            padding: 3px;
+            border: 1px solid #ccc;
+            margin-bottom: -4px;
+            font-size: 8px;
+            height: 15px;
+        }
+.form [type="message"] {
+            width: 100%;
+            padding: 3px;
+  
+            border: 1px solid #ccc;
+            font-size: 8px;
+            height: 35px;
+
+}
+.form .btn {
+            width: 100%;
+            padding: 5px;
+            background-color: red;
+            color: black;
+            background-color: gold;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 10px;
+            margin-top: 2px;
+        } 
+.home h2{
+            color: black;
+            font-size: 15px;
+            text-align: flex-start;
+            margin-top: 5px;
+            margin-bottom: 0;  
+        }
+.home span{
+          font-size: 18px;
+} 
+.home hr{
+    border: 2px solid black;
+    margin: 5px 0 8px 0;;      
+    width: 35%;
+    height: 0;
+    background-color: transparent;
+
+}       
+      
+
+        
 
 footer{
             background: #222; 
