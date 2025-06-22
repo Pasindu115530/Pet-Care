@@ -79,7 +79,7 @@ nav ul li a.active {
 .service-cards img{
           width: 110px;
           height: 100px;
-          box-shadow: 1px 1px 1px rgba(255,191,0);
+          box-shadow: 1px 1px 1px rgba(255,191,0);box-shadow: 1px 1px 1px rgba(255,191,0);
             border: 1px solid black;
             box-shadow: 1px 1px 1px rgba(255,191,0);
           
