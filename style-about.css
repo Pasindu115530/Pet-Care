@@ -229,8 +229,8 @@ footer .footer-content{
   color: #fff;
 }
 hr {
-  margin: 5px 0; /* Reduce space around horizontal rule */
+  margin: 5px 0; 
   border: none;
   height: 1px;
-  background-color: #ccc; /* Optional: make line visible but subtle */
+  background-color: #ccc; ou
 }

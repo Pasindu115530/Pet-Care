@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Care Dog Hostel</title>
-    <link rel="stylesheet" href="style-doghostel.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Care Dog Hostel</title>
+  <link rel="stylesheet" href="style-doghostel.css" />
 </head>
 <body>
 
-    <nav>
-        <div class="topbar" >
-            <img src="Practical Tutorial 03 images/image05.jpg" alt="Pet Care Logo">
-            <h1>PET CARE</h1>
-            <img src="Practical Tutorial 03 images/image05.jpg" alt="Pet Care Logo">
-        </div>
-        <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="service.html">SERVICES</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="reviews.html">REVIEWS</a></li>
-        </ul>
-    </nav>
-    <section class="home">
+  <nav>
+    <div class="topbar">
+      <img src="Practical Tutorial 03 images/image05.jpg" alt="Pet Care Logo">
+      <h1>PET CARE</h1>
+      <img src="Practical Tutorial 03 images/image05.jpg" alt="Pet Care Logo">
+    </div>
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="service.html">SERVICES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="reviews.html">REVIEWS</a></li>
+    </ul>
+  </nav>
 
+  <section class="home">
     <div class="form-box">
       <h2><span>D</span>OG <span>H</span>OSTEL</h2>
       <hr>
 
-    <form class="form">
+      <form class="form" id="hostelForm">
         <label class="label" for="checkin">Check In Date :</label><br>
-        <input class="form-input" type="date" id="checkin" name="checkin" placeholder="Check-in Date" required><br>
+        <input class="form-input" type="date" id="checkin" name="checkin" required><br>
+
         <label for="checkout">Check Out Date :</label><br>
-        <input class="form-input" type="date" id="checkin" name="checkin" placeholder="Check-in Date" required><br>
+        <input class="form-input" type="date" id="checkout" name="checkout" required><br>
+
         <label for="dogs">Dogs :</label><br>
         <input class="form-input" type="number" id="dogs" name="dogs" required><br>
+
         <label for="pups">Pups :</label><br>
         <input class="form-input" type="number" id="pups" name="pups" required><br>
+
         <label for="beds">Beds :</label><br>
-        <input class="form-input" type="number" id="beds" name="beds" required><br>
-        <br>
-        <input class="form-input"  type="submit" value="BOOK NOW">
+        <input class="form-input" type="number" id="beds" name="beds" required><br><br>
 
-    </form>
-
+        <input class="form-input" type="submit" value="BOOK NOW">
+      </form>
     </div>
-    </section>
+  </section>
 
-     <footer>
+  <footer>
     <div class="footer-content">
       <div class="shop-info">
         <center><img src="Practical Tutorial 03 images/image06.jpg" alt="logo" class="red-border" /></center>
@@ -65,14 +67,19 @@
 
       <div class="info">
         <h2>Information</h2>
-        <img src="img/location.jpg" class="icon" alt="location-icon"><div class="location">Pet Care (Pvt) Ltd, 123, 1st Floor, Dalugama, Kelaniya.</div><br>
-        <img src="img/phone.jpg" alt="phone-icon" class="icon"><div class="phone">Telephone: 0112 999999<br>Fax: 0094 112 621 382</div><br>
-        <img src="img/mail.jpg" alt="mail-icon" class="icon"><div class="mail">info@petcare.com</div>
+        <img src="Practical Tutorial 03 images/location.jpg" class="icon" alt="location-icon">
+        <div class="location">Pet Care (Pvt) Ltd, 123, 1st Floor, Dalugama, Kelaniya.</div><br>
+        <img src="Practical Tutorial 03 images/phone.jpg" alt="phone-icon" class="icon">
+        <div class="phone">Telephone: 0112 999999<br>Fax: 0094 112 621 382</div><br>
+        <img src="Practical Tutorial 03 images/mail.jpg" alt="mail-icon" class="icon">
+        <div class="mail">info@petcare.com</div>
       </div>
 
       <div class="map">
         <h2>Visit Us</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15820.123727996406!2d79.91992138790582!3d6.970940090693937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257f649062ffb%3A0xcbffa7579bd3750!2sKelaniya%2011300!5e1!3m2!1sen!2slk!4v1749920200381!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15820.123727996406!2d79.91992138790582!3d6.970940090693937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257f649062ffb%3A0xcbffa7579bd3750!2sKelaniya%2011300!5e1!3m2!1sen!2slk!4v1749920200381!5m2!1sen!2slk"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
@@ -80,6 +87,23 @@
       <p>© 2023 <strong>Pet Care</strong> 11600. Designed By Team PETCARE</p>
     </div>
   </footer>
-    
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("hostelForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (form.checkValidity()) {
+          alert("Your Appointment has been recorded!!!");
+          form.reset(); 
+        } else {
+          form.reportValidity();
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
